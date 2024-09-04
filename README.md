@@ -22,3 +22,9 @@ HTML: Structured the content and layout of the website.
 CSS: Styled the website to create a modern and clean look, ensuring responsiveness across devices.
 
 JavaScript: Implemented interactive features like the booking form validation and dynamic content display.
+
+![Screenshot 2024-09-04 134834](https://github.com/user-attachments/assets/c55ced8d-2147-4f29-9aed-a164d702e6c8)
+
+![Screenshot 2024-09-04 134906](https://github.com/user-attachments/assets/8a2250d6-86d6-4cef-bd87-676877aa54a3)
+
+

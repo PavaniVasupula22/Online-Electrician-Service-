@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Payment</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Payment</h1>
+        <p>Please enter your payment details to complete the booking:</p>
+
+        <form id="paymentForm">
+            <div class="form-group">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+            </div>
+            <div class="form-group">
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv" required>
+            </div>
+            <div class="form-group">
+                <label for="nameOnCard">Name on Card:</label>
+                <input type="text" id="nameOnCard" name="nameOnCard" required>
+            </div>
+            <button type="submit">Pay Now</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("paymentForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            // Simulate payment processing
+            alert("Payment successful! Thank you for your payment.");
+
+            // Redirect to a thank you page or home page after payment
+            window.location.href = 'thanyou.html';
+        });
+    </script>
+</body>
+</html>

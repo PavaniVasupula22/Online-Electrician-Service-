@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Job - Electrician Service</title>
+    <link rel="stylesheet" href="styles1234.css">
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            <h1>Request a Job</h1>
+            <form id="jobRequestForm">
+                <div class="form-group">
+                    <label for="jobType">Select Electrician Role:</label>
+                    <select id="jobType" name="jobType" required>
+                        <option value="">--Please choose a role--</option>
+                        <option value="installation">Installation Electrician</option>
+                        <option value="maintenance">Maintenance Electrician</option>
+                        <option value="repair">Repair Electrician</option>
+                        <option value="industrial">Industrial Electrician</option>
+                        <option value="commercial">Commercial Electrician</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Job Description:</label>
+                    <textarea id="description" name="description" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Preferred Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div class="form-group">
+                    <label for="time">Preferred Time:</label>
+                    <input type="time" id="time" name="time" required>
+                </div>
+                <button type="submit">Submit Job Request</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        // You can add JS to handle form submission here, such as AJAX requests.
+        document.getElementById('jobRequestForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Job request submitted successfully!');
+            // Logic to handle form data submission can be added here
+        });
+    </script>
+</body>
+</html>

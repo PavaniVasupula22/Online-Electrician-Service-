@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Selection</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Booking Confirmed!</h1>
+        <p>Thank you for booking a slot with us. Please choose your preferred payment method:</p>
+
+        <div class="payment-options">
+            <button onclick="choosePayment('online')">Online Payment</button>
+            <button onclick="choosePayment('offline')">Pay Offline</button>
+        </div>
+    </div>
+
+    <script>
+        function choosePayment(method) {
+            if (method === 'online') {
+                window.location.href = 'payment.html';
+            } else {
+                alert('You have selected offline payment. Please be prepared to pay at the time of service.');
+                // Redirect to a thank you page or back to the home page
+                window.location.href = 'thanyou.html';
+            }
+        }
+    </script>
+</body>
+</html>
+
